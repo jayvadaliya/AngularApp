@@ -1,0 +1,44 @@
+<style>
+table {
+    margin: 0px auto;
+    padding: 1%;            
+}​
+table,th{
+    padding: 1%;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+img{
+    width: 45px;
+    height: 45px;
+}
+body{
+    color: dodgerblue;
+}
+span{
+    color: black;
+}
+    
+    
+</style>
+
+
+<body>
+
+<div style="margin-top: 60px;">
+<div class="w3-container w3-center w3-animate-left">
+<table *ngFor = "let n of upoffer">
+    <th>{{n.coupon}}</th>
+    <tr>
+        <td><span>{{n.off}}%</span> Off order above 100.</td>
+    </tr>
+</table>
+</div>
+</div>
+<div class="center">
+    <a routerLink= ""><img src="../../assets/return.svg"></a>
+</div>
+
+</body>

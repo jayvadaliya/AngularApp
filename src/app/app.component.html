@@ -1,0 +1,68 @@
+<style>
+h1{
+  color: #039be5;
+}
+.center {
+  position: absolute;
+}
+.b1{
+  margin-left: 43%;
+}
+.b2{
+  margin-left: 48%;
+}
+nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: white;
+  background-color: rgb(104, 166, 228);
+}
+@media screen and (max-width: 1500px) {
+  div.example {
+    font-size: 20px;
+  }
+  div.center{
+    position: relative;
+  }
+  div.b2{
+    margin-top: 5px;
+    margin-left: 43%;
+  }
+  div.b1{
+    margin-left: 46%;
+  }
+}
+
+</style>
+
+<div [@fade] class="example" style="text-align: center;">
+  <h1>Offer Coupons</h1>
+</div>
+<hr>
+
+<div [@fade] class="center b1"> 
+  <nav>
+    <a routerLink="/offerdetails" routerLinkActive="active">Offers</a>
+  </nav>
+</div>
+<div [@fade] class="center b2">
+  <nav>
+    <a routerLink="/newoffers" routerLinkActive="active">Upcoming Offers</a>
+  </nav>
+</div>
+
+
+<router-outlet></router-outlet>
